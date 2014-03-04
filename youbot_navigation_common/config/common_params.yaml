@@ -10,7 +10,7 @@ footprint: [[0.26, 0.18],
             [-0.27, 0.18]]
 inflation_radius: 0.25
 
+laser: {sensor_frame: base_laser_front_link, data_type: LaserScan, topic: base_scan, marking: true, clearing: true}
+
 obstacle_layer:
     observation_sources: laser
-
-laser: {sensor_frame: base_laser_front_link, data_type: LaserScan, topic: base_scan, marking: true, clearing: true}
