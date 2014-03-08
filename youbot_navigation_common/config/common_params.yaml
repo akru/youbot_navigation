@@ -10,6 +10,17 @@ footprint: [[0.26, 0.18],
             [-0.27, 0.18]]
 inflation_radius: 0.25
 
+TrajectoryPlannerROS:
+    acc_lim_x: 0.25
+    acc_lim_y: 0.25
+    acc_lim_th: 0.6
+    max_vel_x: 0.05
+    min_vel_x: 0.01
+    max_rotational_vel: 0.1
+    min_in_place_rotational_vel: 0.05
+    escape_vel: -0.05
+    holonomic_robot: true
+
 laser: {sensor_frame: base_laser_front_link, data_type: LaserScan, topic: base_scan, marking: true, clearing: true}
 
 obstacle_layer:
